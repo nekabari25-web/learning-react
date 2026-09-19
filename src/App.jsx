@@ -1,4 +1,6 @@
 import React from 'react'
+import pix from './assets/semion.jpg'
+import pixes from './assets/hero.png'
 
 const App = () => {
   return (
@@ -30,7 +32,7 @@ const App = () => {
             <button>Know More</button>
         </div>
         <div className="img">
-            <img src="./assts/media/brand.jpg" alt=""/>
+            <img src= {pix} alt='image'/>
         </div>
     </section>
     {/* <!-- Testimonails --> */}
@@ -39,7 +41,7 @@ const App = () => {
         <h2>What our students Says</h2>
         <div className="testimonial-container">
             <div className="card">
-                <img src="../../logo/logo.jpg" alt=""/>
+                <img src= {pixes} alt=''/>
                 <h3>Geteera Nekabari</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Veniam blanditiis distinctio aspernatur fugiat unde autem in aut consequatur, 
@@ -47,7 +49,7 @@ const App = () => {
                 </p>
             </div>
             <div className="card">
-                <img src="../../logo/logo.jpg" alt=""/>
+                <img src= {pixes} alt=''/>
                 <h3>Geteera Nekabari</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Veniam blanditiis distinctio aspernatur fugiat unde autem in aut consequatur, 
@@ -55,7 +57,7 @@ const App = () => {
                 </p>
             </div>
             <div className="card">
-                <img src="../../logo/logo.jpg" alt=""/>
+                <img src= {pixes} alt=''/>
                 <h3>Geteera Nekabari</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Veniam blanditiis distinctio aspernatur fugiat unde autem in aut consequatur, 
