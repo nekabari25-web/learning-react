@@ -1,0 +1,35 @@
+.cta
+{
+  padding: 80px 10%;
+  background-color: #f5f5f5;
+  text-align: center;
+  color: #fff;
+}
+.cta-content h2
+{
+  font-size: 40px;
+  padding-bottom: 15px;
+  color: #000;
+}
+.cta-content p
+{
+  font-size: 19px;
+  padding-bottom: 25px;
+  color: #8f8f8f;
+}
+.cta-botton
+{
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: orangered;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cta-botton:hover
+{
+  background-color: green;
+  color: greenyellow;
+}

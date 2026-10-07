@@ -1,115 +1,25 @@
 import React from 'react'
-import pix from './assets/semion.jpg'
-import pixes from './assets/hero.png'
+import { Route, Routes } from 'react-router-dom';
+import LandingPagesScreen from './pages/LandingPagesScreen';
+import Aboutus from './pages/Aboutus';
+import Contactus from './pages/Contactus';
+import Services from './pages/Services';
+import SharpLoginDesign from './pages/Login';
+import SharpRegisterDesign from './pages/Register';
 
 const App = () => {
   return (
     <div>
-    <header>
-        <div className="nav-link"><a href="../../HTMLTUTOR/public/index.html">Home</a></div>
-        <div className="nav-link"><a href="">About</a></div>
-        <div className="nav-link"><a href="">Contact</a></div>
-        <div className="nav-link"><a href="">Services</a></div>
-    </header>
-    <div className="hero-section">
-        <div className="overlay">
-            <div className="text">
-                <h1>Welcome To My Web Page</h1>
-                <p>learn fullstact development, UI/UX, Graphics</p>
-                <div><button>Get started</button></div>
-            </div>
-        </div>
-    </div>
-    {/* <!-- ABOUT SECTION --> */}
-    <section className="about">
-        <div className="about-text">
-            <h3>Meet The Owner</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Temporibus sed, pariatur non, voluptatem ipsa quos accusamus 
-                quasi molestias consectetur enim officia veniam quam 
-                laudantium totam assumenda possimus accusantium ullam quod.
-            </p>
-            <button>Know More</button>
-        </div>
-        <div className="img">
-            <img src= {pix} alt='image'/>
-        </div>
-    </section>
-    {/* <!-- Testimonails --> */}
-    <section className="testimonials">
-        <h4>TESTIMONIAL</h4>
-        <h2>What our students Says</h2>
-        <div className="testimonial-container">
-            <div className="card">
-                <img src= {pixes} alt=''/>
-                <h3>Geteera Nekabari</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Veniam blanditiis distinctio aspernatur fugiat unde autem in aut consequatur, 
-                    ducimus inventore saepe, temporibus possimus!
-                </p>
-            </div>
-            <div className="card">
-                <img src= {pixes} alt=''/>
-                <h3>Geteera Nekabari</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Veniam blanditiis distinctio aspernatur fugiat unde autem in aut consequatur, 
-                    ducimus inventore saepe, temporibus possimus!
-                </p>
-            </div>
-            <div className="card">
-                <img src= {pixes} alt=''/>
-                <h3>Geteera Nekabari</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Veniam blanditiis distinctio aspernatur fugiat unde autem in aut consequatur, 
-                    ducimus inventore saepe, temporibus possimus!
-                </p>
-            </div>
-        </div>
-    </section>
-    {/* <!-------- CALL TO ACTION SECTION --------> */}
-    <section className="cta">
-        <div className="cta-content">
-            <h2>Ready To Start Your Learning Journey?</h2>
-            <p>Join us today and start learning practical digital skills to transform your future</p>
-            <a href="" className="cta-botton">Get Started</a>
-        </div>
-    </section>
-
-    {/* <!-------- footer --------> */}
-     
-    <footer className="footer">
-        <div className="footer-container">
-            {/* <!---- About ----> */}
-            <div className="footer-box">
-                <h2>Our Digital Skills Academy</h2>
-                <p>Empowering students with practical digital skills for a better future</p>
-            </div>
-
-            {/* <!---- Quick links ----> */}
-            <div className="footer-box">
-                <h3>Quick Links</h3>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Courses</a>
-                <a href="#">Contact</a>
-            </div>
-
-            {/* <!---- Contact ----> */}
-            <div className="footer-box">
-                <h3>Contact Us</h3>
-                <p>Email: info@example.com</p>
-                <p>Phone: +234 000 000 0000</p>
-                <p>Owerri, Imo State</p>
-            </div>
-        </div>
-
-        {/* <!---- Copyright ----> */}
-        <div className="copyright">
-            <p>&copy; 2026 Our Digital Skills Academy. All Right Reserved</p>
-        </div>
-    </footer>
+      <Routes>
+        <Route path="/" element={<LandingPagesScreen />} />
+        <Route path="Aboutus" element={< Aboutus />} />
+        <Route path="Contactus" element={< Contactus />} />
+        <Route path="Services" element={< Services />} />
+        <Route path="Login" element={< SharpLoginDesign />} />
+        <Route path="Register" element={< SharpRegisterDesign/>} />
+      </Routes>
     </div>
   )
 }
 
-export default App
+export default App;

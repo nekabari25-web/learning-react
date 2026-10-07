@@ -1,0 +1,70 @@
+.hero-section {
+  background-image: url("../../assets/desktoptwo.png");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.text {
+  min-height: 35vh;
+  width: 80%;
+  color: antiquewhite;
+}
+.text h1 {
+  margin: 20px;
+}
+.text p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+.text button {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: orangered;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  color: blanchedalmond;
+}
+.text button:hover {
+  background-color: green;
+  color: greenyellow;
+}
+@media (max-width: 768px) 
+{
+  .hero-section
+  {
+    height: 80vh;
+  }  
+  .overlay
+  {
+    width: 80%;
+    height: auto;
+  }
+  .text
+  {
+    width: 90%;
+    min-width: 0;
+  }
+  .text h1
+  {
+    font-size: 32px;
+  }
+  .text p
+  {
+    font-size: 18px;
+  }
+  .text button
+  {
+    padding: 12px 28px;
+    font-size: 16px;
+  }
+}
