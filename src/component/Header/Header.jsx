@@ -44,8 +44,19 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" sx={{maxHeight: '12vh', position: 'fixed', zIndex:9999999, backgroundColor: '#8878',}}>
-      <Container maxWidth="xl" >
+    <AppBar
+      position="fixed"
+      sx={{
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 9999,
+        maxHeight: '12vh',
+        backgroundColor: '#8878',
+        boxShadow: 'none',
+      }}
+    >
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
